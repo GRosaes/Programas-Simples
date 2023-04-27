@@ -1,3 +1,5 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.
 import random
 
 def jogar(P_win, M_win):
@@ -27,16 +29,20 @@ def jogar(P_win, M_win):
     elif ( Maquina == "Pedra" and Player == "Tesoura") or ( Maquina == "Papel" and Player == "Pedra") or ( Maquina == "Tesoura" and Player == "Papel"):
         M_win = M_win + 1
         print("\nPonto para a Maquina!")
+        print("\njogador x maquina\n" + str(P_win) + "       x      " + str(M_win) + "\n")
         input("(presione enter para continuar)")
     else:
         print("\nEmpate!")
+        print("\njogador x maquina\n" + str(P_win) + "       x      " + str(M_win) + "\n")
         input("(presione enter para continuar)")
 
     if P_win == 2:
+        print("\njogador x maquina\n" + str(P_win) + "       x      " + str(M_win) + "\n")
         print("! ! ! V I T Ó R I A ! ! !\n \n \n \n")
         input("(presione enter para continuar)")
         menu()
     elif M_win == 2:
+        print("\njogador x maquina\n" + str(P_win) + "       x      " + str(M_win) + "\n")
         print("* * * D E R R O T A * * *\n \n \n \n")
         input("(presione enter para continuar)")
         menu()
@@ -49,7 +55,9 @@ def menu():
     op = int(input("1 - JOGAR\n2 - SAIR \n"))
 
     if op == 1:
+        print("jogador x maquina\n" + str(P_win) + "       x      " + str(M_win))
         jogar(P_win, M_win)
+        
     elif op == 2:
         print("Até Logo!")
     else:
